@@ -27,9 +27,9 @@ class MainActivity : AppCompatActivity(), MenuAdapter.RecyclerViewEvent {
         mainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
         menuList.clear()
-        menuList.add(Menu("Translate Text","This is a simple Language Translation application which can translate text from one language to another"))
-        menuList.add(Menu("This is a simple OCR application which can capture image from phone's camera and convert the text in image into text view and read those text. I use firebase ML Kit for image to text recognition."))
-        menuList.add(Menu("OCR","This is a simple OCR application which can take photos from your local storage and convert the text in image into text view and read those text. I use firebase ML Kit for image to text recognition."))
+        menuList.add(Menu("Translate Text","This is a simple Language Translation application which translates text from one language to another"))
+        menuList.add(Menu("Image to Text","This is a simple OCR application which can capture image from phone's camera and convert the text in image into text view and read those text."))
+        menuList.add(Menu("OCR","This is a simple OCR application which can take photos from your local storage and convert the text in image into text view and read those text. "))
 
         // Adapter
         mAdapter = MenuAdapter(menuList,this)
